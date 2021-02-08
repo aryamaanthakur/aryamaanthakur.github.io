@@ -140,7 +140,8 @@ body{
 .contact-social-links li{
     list-style: none;
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-bottom: 30px;
 }
 .contact-social-links i{

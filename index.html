@@ -37,6 +37,10 @@
               </li>
               
           </div>
+          <button onclick="myFunction()" style="background: none; border: none; ">
+            <img id="lightmode-icon" style = "display: none; height: 25px;" src="images/lightmode.png" alt="">
+            <img id="darkmode-icon"  style = "height: 25px;" src="images/darkmode.png" alt="">
+          </button>
         </div>
     </nav>
     <!-- Navigation End -->
@@ -105,8 +109,8 @@
 
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
-              <button class="nav-link" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false">Web Development</button>
+              <li class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
+              <li class="nav-link" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false">Web Development</button>
               <!-- <button class="nav-link" id="nav-ml-tab" data-bs-toggle="tab" data-bs-target="#nav-ml" type="button" role="tab" aria-controls="nav-ml" aria-selected="false">Machine Learning</button> -->
               <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
             </div>
@@ -293,9 +297,9 @@
 
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-all-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-all-projects" type="button" role="tab" aria-controls="nav-all-projects" aria-selected="true">All</button>
-              <button class="nav-link" id="nav-infosec-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-infosec-projects" type="button" role="tab" aria-controls="nav-infosec-projects" aria-selected="false">InfoSec</button>
-              <button class="nav-link" id="nav-web-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-web-projects" type="button" role="tab" aria-controls="nav-web-projects" aria-selected="false">Web Development</button>
+              <li class="nav-link active" id="nav-all-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-all-projects" type="button" role="tab" aria-controls="nav-all-projects" aria-selected="true">All</button>
+              <li class="nav-link" id="nav-infosec-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-infosec-projects" type="button" role="tab" aria-controls="nav-infosec-projects" aria-selected="false">InfoSec</button>
+              <li class="nav-link" id="nav-web-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-web-projects" type="button" role="tab" aria-controls="nav-web-projects" aria-selected="false">Web Development</button>
 <!--               <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
  -->            </div>
           </nav>
@@ -438,6 +442,49 @@
     </div>
     <!-- Contact End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            myFunction()
+        }
+        function myFunction() {
 
+            var toggleButton = document.querySelector(".navbar button");
+            toggleButton.style.color = toggleButton.style.color === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
+            console.log(toggleButton.style.color);
+
+            var darkmodeBtn = document.querySelector("#darkmode-icon");
+            var lightmodeBtn = document.querySelector("#lightmode-icon");
+
+            darkmodeBtn.style.display = darkmodeBtn.style.display === "none" ? '' : "none";
+            lightmodeBtn.style.display = lightmodeBtn.style.display === "none" ? '' : "none";
+
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var iconboxes = document.querySelectorAll(".icon-box h3");
+        
+            iconboxes.forEach(iconbox => {
+                iconbox.style.color = iconbox.style.color === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
+            });
+
+            var social_links = document.querySelectorAll(".social-links i");
+            social_links.forEach(social_link => {
+                social_link.style.color = social_link.style.color === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
+            });
+
+            var social_links = document.querySelectorAll(".contact-social-links i");
+            social_links.forEach(social_link => {
+                social_link.style.color = social_link.style.color === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
+            });
+
+            var cards = document.querySelectorAll(".card");
+            cards.forEach(card => {
+                card.style.background = card.style.background === 'rgb(0, 0, 0)' ? '' : 'rgb(0, 0, 0)';
+                card.style.borderColor = card.style.borderColor === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
+
+            });
+
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+    </script>
 </body>
 </html>

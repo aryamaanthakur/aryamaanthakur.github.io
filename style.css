@@ -78,6 +78,28 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+#resume-button {
+    background-color: #1ebba3;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#resume-button:focus {
+    outline-color: none;
+    box-shadow: none;
+}
+
+#resume-button:hover {
+    background-color: #1ebba3a1;
+}
+
 .social-links li{
     list-style: none;
     display: inline-block;

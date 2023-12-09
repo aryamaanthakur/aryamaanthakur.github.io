@@ -137,6 +137,11 @@ h3 {
     }
 }
 
+.xp-icon {
+    height: 75px;
+    margin: 50px;
+}
+
 .icon-box {
     display: flex;
     align-items: center;

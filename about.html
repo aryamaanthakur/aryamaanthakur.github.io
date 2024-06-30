@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito Sans', Arial, sans-serif; /* Use Nunito for body text */
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px;
+            /* padding: 20px; */
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600; /* Slightly bold */
+            padding: 40px 0 0 0;
+            text-align: left;
+            color: #383838;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            overflow: hidden;
+            text-align: center; /* Center align text */
+            font-size: 14px; /* Decrease font size for navbar on mobile */
+
+        }
+        .navbar a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 10px 15px; /* Adjusted padding for better touch target */
+            text-decoration: none;
+            position: relative; /* Ensure relative positioning for pseudo-element */
+        }
+        .navbar a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #20c997;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s ease; /* Smooth transition for width */
+        }
+        .navbar a:hover::after {
+            width: 100%; /* Expand width on hover */
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap; /* Allow columns to wrap */
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .column {
+            width: 100%; /* Full width on smaller screens */
+            margin-bottom: 20px;
+        }
+        .experiences {
+            margin-top: 20px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400; /* Slightly bold */
+            position: relative;
+            margin-bottom: 10px;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            border-bottom: 1px solid #ccc;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .experience-item {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .experience-item strong {
+            display: block;
+            font-weight: 600; /* Bold for job title */
+        }
+
+        @media (min-width: 600px) {
+            .column {
+                width: 48%; /* Two columns on larger screens */
+                margin-bottom: 0;
+            }
+            .navbar {
+                font-size: 18px; /* Decrease font size for navbar on mobile */
+
+            }
+            .experience-date {
+                position: absolute;
+                font-weight: 400; /* Regular weight for date */
+                right: 0;
+                top: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="#">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="https://drive.google.com/file/d/1hJx7PGoTOvFb9hAo0iV35yVEl94o02bW/view?usp=sharing" target="_blank">Resume</a>
+    </div>
+
+    <h1>About Me</h1>
+    
+    <div class="about-section">
+        <div class="column">
+            <h2>My Interests</h2>
+            <p>I'm Aryamaan, a student studying Mathematics and Computing at IIT (ISM) Dhanbad. I am really into Machine Learning. I have some research experience in Efficient ML (pruning, distillation, quantization). Other than ML, Cryptography and Steganography fascinates me a lot. </p>
+            <p>When I'm not studying I like to listen to music (especially DHH), enjoy Netflix, and binge-watch anime.</p>
+        </div>
+        <div class="column">
+            <h2>Education</h2>
+            <p>
+                <strong>Integrated M. Tech. in Mathematics and Computing</strong><br>
+                Indian Institute of Technology (ISM), Dhanbad <br>
+                2020 - 25 <strong>(Current CGPA - 8.65/10)</strong>
+            </p>
+            <p>
+                <strong>Highschool</strong><br>
+                The Tribhuvan School, Patna <br> 
+            </p>
+        </div>
+    </div>
+    
+    <div class="experiences">
+        <h2>Experiences</h2>
+        <div class="experience-item">
+            <strong>Research Intern, IBM Research Labs, Bangalore</strong>
+            <span class="experience-date">May, 2024 - Present</span>
+            <div>Developing a time estimator for multi-GPU training of Large Language Models.</div>
+        </div>
+        <div class="experience-item">
+            <strong>Open Source Contributor, Google Summer of Code</strong>
+            <span class="experience-date">May, 2024 - Present</span>
+            <div>Evolutionary and Transformer Models for Symbolic Regression. Organization: ML4SCI</div>
+        </div>
+        <div class="experience-item">
+            <strong>Global Alpha Researcher, Trexquant</strong>
+            <span class="experience-date">Aug, 2023 - Sep, 2023</span>
+            <div>Reviewed and implemented alpha trading strategies</div>
+        </div>
+        <div class="experience-item">
+            <strong>Research Intern, Nyun AI</strong>
+            <span class="experience-date">May, 2023 - Aug, 2023</span>
+            <div>Developed a network compression method - Quantize aware Pruning using Distillation</div>
+        </div>
+        <div class="experience-item">
+            <strong>Research Intern, Transmute AI Labs</strong>
+            <span class="experience-date">May, 2022 – Nov, 2022</span>
+            <div>Worked on making neural networks efficient by using Knowledge Distillation and making diffusion models faster by applying network slimming.</div>
+        </div>
+        <div class="experience-item">
+            <strong>Research Intern, Real Maker</strong>
+            <span class="experience-date">Jul, 2022 – Aug, 2022</span>
+            <div>Worked on handling highly imbalanced class distribution problem.</div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

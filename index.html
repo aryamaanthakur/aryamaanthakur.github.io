@@ -3,214 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Aryamaan Thakur</title>
-    <meta name="description" content="I'm Aryamaan Thakur, pursuing Integrated M. Tech. in Mathematics and Computing at IIT (ISM) Dhanbad. I'm interested in a lot of things which revolve around computer.">
-    <meta name="keywords" content="aryamaan thakur, mathematics and computing, iit ism dhanbad, integrated master of technology, m tech">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Aryamaan Thakur - Machine Learning Researcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/myfavicon.png">
+    <style>
+        body {
+            font-family: 'Nunito', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 2.5em;
+            margin: 0;
+            color: #383838;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        .links {
+            margin: 20px 0;
+        }
+
+        .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 2em;
+        }
+
+        .links a:hover {
+            color: #20c997;
+        }
+
+        .navigation a {
+            display: inline-block;
+            margin: 10px 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        .navigation a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #20c997;
+            transition: width .3s;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+        }
+
+        .navigation a:hover::after {
+            width: 100%;
+        }
+
+        .icon {
+            font-size: 1.5em;
+        }
+
+        .profile-picture {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Start -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li> -->
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="/blog">Blog</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1_64PtcTm3YsjDxOPlZtM8anOYEs3gxvm/view?usp=sharing">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              
-          </div>
-          <button onclick="myFunction()" style="background: none; border: none; ">
-            <img id="lightmode-icon" style = "display: none; height: 25px;" src="images/lightmode.png" alt="">
-            <img id="darkmode-icon"  style = "height: 25px;" src="images/darkmode.png" alt="">
-          </button>
-        </div>
-    </nav>
-    <!-- Navigation End -->
-
-    <!-- Background Start -->
-    <div id="home">
-        <img src="images/back1.jpg" class="img-fluid" width="100%" alt="">
+    <img src="me.jpeg" alt="Aryamaan Thakur" class="profile-picture">
+    <div class="name">Aryamaan Thakur</div>
+    <div class="tagline">I like to tweak weights to identify cats and dogs</div>
+    <div class="links">
+        <a href="https://github.com/aryamaanthakur" target="_blank" class="icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/aryamaanthakur" target="_blank" class="icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/aryamaanthakur" target="_blank" class="icon">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:aryamaanthakur.2002@gmail.com" target="_blank" class="icon">
+            <i class="far fa-envelope"></i>
+        </a>
     </div>
-    <div class="heading-content text-center">
-        <h5>Hello, I'm<span class="blink">|</span></h5>
-        <h1>ArYAMAAN</h1>
-        <p>you're welcome</p>
+    <div class="navigation">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="https://drive.google.com/file/d/1hJx7PGoTOvFb9hAo0iV35yVEl94o02bW/view?usp=sharing" target="_blank"">Resume</a>
     </div>
-    <!-- Background End -->
 
-    <!-- About Start -->
-    <div id="about"></div>
-    <br>
-    <div class="container mt-5">
-        <div class="post-heading text-center">
-            <h3 class="display-4">About Me</h3>
-            <hr class="w-50 mx-auto mb-5">
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-12 px-4">
-                <h3>Hello,</h3>
-                <p class="mb-4" style="text-align: justify;">
-                    I'm Aryamaan, a student studying Mathematics and Computing at IIT (ISM) Dhanbad. I am really into Machine Learning. I have some research experience in Efficient ML (pruning, distillation, quantization). Other than ML, Cryptography and Steganography fascinates me a lot. <p> When I'm not studying I like to listen to music (DHH specially), diving into netflix and binge watching anime.
-                </p>
-                <!-- <a href="https://drive.google.com/file/d/1_Q6Z-zoYMj6tGvjuxa9xRBHyV_zhRdRI/view?usp=sharing" target="_blank" id="resume-button" class="mb-4">Resume</a> -->
-                <!-- <ul class="social-links list-unstyled">
-                    <li><a href="mailto:aryamaanthakur.2002@gmail.com"><i class="far fa-envelope"></i></a></li>
-                    <li><a href="https://github.com/aryamaanthakur"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://linkedin.com/in/aryamaanthakur"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.facebook.com/thakuraryamaan/"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="https://www.instagram.com/_aryamaan_/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/aryamaanthakur"><i class="fab fa-twitter-square"></i></a></li>
-                    <li><a href="https://www.quora.com/profile/Aryamaan-Thakur"><i class="fab fa-quora"></i></a></li>
-                </ul> -->
-                
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 px-4">
-                <h3>Education</h3>
-                <hr class="">
-                <p>
-                    <strong>Integrated M. Tech. in Mathematics and Computing</strong><br>
-                    Indian Institute of Technology (ISM), Dhanbad <br>
-                    2020 - 25 <strong>(Current CGPA - 8.9)</strong>
-                </p>
-                <p>
-                    <strong>Highschool</strong><br>
-                    The Tribhuvan School, Patna <br> 
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Experience Start-->
-
-        <div class="container mt-5 text-center">
-            <div class="post-heading text-center mt-5">
-                <h3 style="font-weight: 500;">Experience</h3>
-                <hr class="w-50 mx-auto mb-5">
-            </div>
-
-            <p>
-                <strong>Global Alpha Researcher, Trexquant</strong><br>
-                Reviewed and implemented alpha trading strategies <br>
-                August, 2023 - Sept, 2023
-            </p>
-
-            <p>
-                <strong>Research Intern, Nyun AI</strong><br>
-                Quantize aware Pruning using Distillation <br>
-                May, 2023 - August, 2023
-            </p>
-
-            <p>
-                <strong>Research Intern, Transmute AI Labs</strong><br>
-                Knowledge Distillation and Network Pruning <br>
-                May, 2022 – Present
-            </p>
-
-            <p>
-                <strong>Research Intern, Real Maker</strong><br>
-                Handling highly imbalanced class distribution problem <br>
-                July, 2022 – August, 2022
-            </p>
-
-        </div>
-
-        <!-- Experience End-->
-
-    </div>
-    <!-- About End -->
-
-    <!-- Contact Start -->
-    <div id="contact"></div>
-    <div class="container mt-5 py-5 text-center">
-        <div class="post-heading">
-            <h3 class="display-4">
-                Contact
-            </h3>
-            <hr class="w-50 mx-auto mb-5">
-        </div>
-        <h3>Get in touch with me!</h3>
-        <ul class="contact-social-links list-unstyled my-5">
-            <li><a href="mailto:aryamaanthakur.2002@gmail.com"><i class="far fa-envelope"></i></a></li>
-            <li><a href="https://github.com/aryamaanthakur"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/in/aryamaanthakur"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/thakuraryamaan/"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://www.instagram.com/_aryamaan_/"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://twitter.com/aryamaanthakur"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="https://www.quora.com/profile/Aryamaan-Thakur"><i class="fab fa-quora"></i></a></li>
-            <!-- <li><a href=""><i class="fab fa-medium"></i></a></li> -->
-        </ul>
-    </div>
-    <!-- Contact End -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            myFunction()
-        }
-        function myFunction() {
-
-            var toggleButton = document.querySelector(".navbar button");
-            toggleButton.style.color = toggleButton.style.color === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
-            console.log(toggleButton.style.color);
-
-            var darkmodeBtn = document.querySelector("#darkmode-icon");
-            var lightmodeBtn = document.querySelector("#lightmode-icon");
-
-            darkmodeBtn.style.display = darkmodeBtn.style.display === "none" ? '' : "none";
-            lightmodeBtn.style.display = lightmodeBtn.style.display === "none" ? '' : "none";
-
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-            var iconboxes = document.querySelectorAll(".icon-box h3");
-        
-            iconboxes.forEach(iconbox => {
-                iconbox.style.color = iconbox.style.color === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
-            });
-
-            var social_links = document.querySelectorAll(".social-links i");
-            social_links.forEach(social_link => {
-                social_link.style.color = social_link.style.color === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
-            });
-
-            var social_links = document.querySelectorAll(".contact-social-links i");
-            social_links.forEach(social_link => {
-                social_link.style.color = social_link.style.color === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
-            });
-
-            var cards = document.querySelectorAll(".card");
-            cards.forEach(card => {
-                card.style.background = card.style.background === 'rgb(0, 0, 0)' ? '' : 'rgb(0, 0, 0)';
-                card.style.borderColor = card.style.borderColor === 'rgb(255, 255, 255)' ? '' : 'rgb(255, 255, 255)';
-
-            });
-
-            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-        }
-    </script>
+    <!-- Your content sections would go here -->
+    
 </body>
 </html>
